@@ -1,1 +1,172 @@
 /* Custom styles for Restaurant POS System will go here */
+body {
+    font-family: 'Inter', sans-serif; /* A modern, clean sans-serif font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff; /* Default background for other pages */
+}
+
+/* Utility class for centering content if needed outside login */
+.centered-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Adjust as needed */
+}
+
+/* More general styles will be added here */
+/* General Layout Styles - Append to assets/css/style.css */
+
+/* Header Styles */
+.site-header {
+    background-color: #ffffff; /* White background for header */
+    border-bottom: 1px solid #e7e7e7; /* Subtle border */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    margin-bottom: 1.5rem; /* Space below header */
+}
+
+.site-header .navbar-brand {
+    font-weight: 600; /* Bolder site name */
+    color: #007bff; /* Primary color for brand */
+}
+
+.site-header .navbar-nav .nav-link {
+    color: #555; /* Darker gray for nav links */
+    font-weight: 500;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+    color: #007bff; /* Primary color on hover */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #f8f9fa; /* Light gray background for sidebar */
+    border-right: 1px solid #e7e7e7;
+    padding-top: 1rem;
+    height: calc(100vh - 56px - 1.5rem); /* Adjust 56px if header height changes, 1.5rem is header margin-bottom */
+    overflow-y: auto; /* Scroll for long sidebars */
+}
+
+.sidebar .nav-link {
+    color: #333;
+    padding: 0.75rem 1rem; /* More padding for sidebar links */
+    font-weight: 500;
+    border-left: 3px solid transparent; /* For active state indication */
+}
+
+.sidebar .nav-link:hover {
+    background-color: #e9ecef; /* Light hover effect */
+    color: #007bff;
+    border-left-color: #007bff;
+}
+
+.sidebar .nav-link.active { /* Assuming an 'active' class might be added by JS or PHP */
+    color: #007bff;
+    font-weight: 600;
+    border-left-color: #007bff; /* Highlight active link */
+}
+
+.sidebar .nav-item + .nav-item { /* Space between items - optional */
+    margin-top: 0.25rem;
+}
+
+/* Main Content Area next to Sidebar */
+.main-content {
+    padding-left: 15px; /* Default Bootstrap container padding */
+    padding-right: 15px;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #6c757d; /* Muted text color */
+    padding: 1.5rem 0;
+    border-top: 1px solid #e7e7e7; /* Subtle border */
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 2rem; /* Space above footer */
+}
+
+/* Dashboard Content Styles - Append to assets/css/style.css */
+
+/* Page Titles / Headers */
+.page-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6; /* Light border for separation */
+}
+
+.page-header h1, .page-header h2, .page-header h3 {
+    font-weight: 600; /* Bolder titles */
+    color: #343a40; /* Darker heading color */
+}
+
+/* Cards for Dashboard Widgets/Sections */
+.card.dashboard-card { /* Add 'dashboard-card' class to cards in dashboard pages */
+    border: 1px solid #e0e0e0; /* Softer border for cards */
+    border-radius: 0.5rem; /* Slightly more rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+    margin-bottom: 1.5rem; /* Space between cards */
+}
+
+.card.dashboard-card .card-header {
+    background-color: #f8f9fa; /* Light gray header for cards */
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 600;
+    color: #495057; /* Text color for card headers */
+    padding: 0.75rem 1.25rem;
+}
+
+.card.dashboard-card .card-body {
+    padding: 1.25rem;
+}
+
+/* Tables */
+.table.dashboard-table { /* Add 'dashboard-table' class to tables in dashboard pages */
+    margin-bottom: 1.5rem; /* Space below tables */
+    border: 1px solid #dee2e6;
+}
+
+.table.dashboard-table th {
+    background-color: #f8f9fa; /* Light header for tables */
+    font-weight: 600;
+    color: #495057;
+    border-bottom-width: 2px; /* Stronger border under table headers */
+}
+
+.table.dashboard-table td, .table.dashboard-table th {
+    padding: 0.75rem;
+    vertical-align: middle; /* Better alignment for cell content */
+}
+
+/* Buttons - General dashboard button styling */
+.btn-dashboard { /* Use this for primary actions on dashboards */
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.btn-primary.btn-dashboard {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary.btn-dashboard:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary.btn-dashboard {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.btn-secondary.btn-dashboard:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+}
+
+
+/* Alert styling improvements */
+.alert {
+    border-radius: 0.375rem; /* Softer corners for alerts */
+    padding: 1rem 1.25rem;
+}

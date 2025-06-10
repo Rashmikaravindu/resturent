@@ -1,3 +1,4 @@
+<?php $page_body_class = 'login-page'; ?>
 <?php
 // Main entry point / Login Page
 
@@ -79,7 +80,7 @@ require_once __DIR__ . '/includes/header.php';
 
 <div class="row justify-content-center mt-5">
     <div class="col-md-6 col-lg-4">
-        <div class="card">
+        <div class="card login-card">
             <div class="card-header">
                 <h3 class="text-center">Login</h3>
             </div>
